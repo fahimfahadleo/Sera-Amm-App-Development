@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/commonpagebg"
+    tools:context=".Result">
+
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center"
+        card_view:cardElevation="4dp"
+        android:layout_margin="8dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/crossbutton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icons8_delete_96"
+                    android:layout_margin="16dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/hind_siliguri"
+            android:text="@string/thank_you"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/font"
+            android:textSize="@dimen/header" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/hind_siliguri"
+            android:layout_margin="4dp"
+            android:text="@string/large_string_dhonnobad"
+            android:textAlignment="center"
+            android:textSize="@dimen/name" />
+
+
+
+            <TextView
+                android:id="@+id/orderno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font"
+                android:textAlignment="center"
+                android:fontFamily="@font/hind_siliguri"
+                android:layout_gravity="center"
+                android:textSize="@dimen/header"
+                android:text="@string/order_no"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sera_aam_theke_aam_kenar_jonno_dhonnobad"
+                android:textSize="@dimen/price"
+                android:layout_margin="4dp"
+                android:textAlignment="center"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="1dp"
+        card_view:cardMaxElevation="1dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ammbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/aam"
+                    android:textSize="@dimen/name"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:textColor="@color/font"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/cart"
+                    android:textSize="@dimen/name"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:textColor="@color/font"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/chat"
+                    android:textSize="@dimen/name"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:textColor="@color/font"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header">10sp</dimen>
+    <dimen name="name">8sp</dimen>
+    <dimen name="price">7sp</dimen>
+    <dimen name="quantiey">6sp</dimen>
+</resources>

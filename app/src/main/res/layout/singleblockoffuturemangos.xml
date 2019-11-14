@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/futuremangoimage"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/heightandwidth"
+                android:layout_height="@dimen/heightandwidth"
+                android:layout_marginEnd="4dp"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/futuremangoeslinearlayotu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/futuremangoname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="@dimen/header" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/futuremangoorder"
+                        android:layout_width="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="8dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/baseline_add_shopping_cart_24px"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/dateofarrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/name"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/font"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/estimated_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:maxLines="1"
+                        android:textSize="@dimen/price"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

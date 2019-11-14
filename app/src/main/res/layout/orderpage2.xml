@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/commonpagebg"
+    tools:context=".OrderPageTwo">
+
+    <ImageView
+        android:id="@+id/orderpagetwobackbutton"
+        android:src="@drawable/baseline_arrow_back_black_48dp"
+        android:layout_width="24dp"
+        android:layout_margin="8dp"
+        android:layout_height="24dp"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/orderpagetwoimage"
+                    android:layout_width="@dimen/heightandwidth"
+                    android:layout_height="@dimen/heightandwidth"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    tools:ignore="ContentDescription" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:id="@+id/orderpagetwoname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="@dimen/header" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/orderpagetwoprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:maxLines="1"
+                            android:fontFamily="@font/hind_siliguri"
+                            android:textSize="@dimen/name"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/hind_siliguri"
+                android:text="@string/poriman"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/font"
+                android:textSize="@dimen/name" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/orderpagetwominusbutton"
+                    android:layout_width="35dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icons8_minus_96"
+                    android:layout_height="35dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/orderpagetwoamount"
+                    android:layout_width="@dimen/heightandwidth"
+                    android:layout_height="@dimen/inputveiw"
+                    android:hint="@string/porman"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:textSize="@dimen/price"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/buttonnotclicked"/>
+                <ImageView
+                    android:id="@+id/orderpagetwoplusbutton"
+                    android:layout_width="35dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/icons8_plus_math_96"
+                    android:layout_gravity="center"
+                    android:layout_height="35dp"
+                    tools:ignore="ContentDescription" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/orderpagetwosubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/name"
+                android:textColor="#fff"
+                android:layout_marginTop="8dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/add_to_list"
+                android:fontFamily="@font/hind_siliguri"
+                android:background="@drawable/buttonbackground"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/orderpagetotalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/name" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/orderpagetwodiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/font"
+                    android:textSize="@dimen/name" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font"
+                    android:text="@string/orderer_niom"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/name"
+                    android:fontFamily="@font/hind_siliguri"/>
+
+
+                <TextView
+                    android:id="@+id/orderpage2overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:text=""
+                    android:textSize="@dimen/price" />
+
+                <TextView
+                    android:id="@+id/readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:textSize="@dimen/price"
+                    android:text="@string/read_more"
+                    android:textColor="@color/font"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="1dp"
+        card_view:cardMaxElevation="1dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ammbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/aam"
+                    android:textSize="@dimen/name"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:textColor="@color/font"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/cart"
+                    android:textSize="@dimen/name"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:textColor="@color/font"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/chat"
+                    android:textSize="@dimen/name"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:textColor="@color/font"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

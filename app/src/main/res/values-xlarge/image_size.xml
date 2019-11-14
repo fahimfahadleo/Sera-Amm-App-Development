@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightandwidth">120dp</dimen>
+    <dimen name="singleitem">250dp</dimen>
+    <dimen name="blocksize">56dp</dimen>
+    <dimen name="inputveiw">45dp</dimen>
+</resources>
