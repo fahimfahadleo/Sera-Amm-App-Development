@@ -48,7 +48,7 @@ public class HomePage extends AppCompatActivity {
         mangoes=findViewById(R.id.mangoes);
         LayoutInflater inflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
         chat=findViewById(R.id.chat);
-
+//https://stackoverflow.com/questions/27415236/how-to-update-ui-from-a-runnable
         dh=new DatabaseHelper(this);
 
         chat.setOnClickListener(v -> {
